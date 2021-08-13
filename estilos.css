@@ -1,0 +1,193 @@
+
+.FondoIndice
+    {   
+        display: inline-block;
+        background-color: rgb(22, 153, 22);
+        font-size: 16px;
+        height: 75px;
+        width: 1000px;
+        border: solid 8px rgb(9, 83, 9)
+    }
+.Fondo
+    {
+        background-color: rgb(24, 204, 24);
+    }
+
+
+.ImagenFondo
+    {
+            background-image: url(imagenes/lionel-messi-argentina-nigeria-world-cup-russi-2018-26062018_93x42eje651jz426mmy39451.jpg)
+    }
+
+
+h1, h2{
+    text-decoration: underline white;
+    text-align: center;
+    color: white
+}
+
+p, input, textarea{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+li a{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.videoIzquierda{
+    position: relative;
+    left: 700px;
+    animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.videoDerecha{
+    position: relative;
+    left: 70px;
+    animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: rgb(9, 83, 9);
+    height: 50px;
+    margin: 8px;
+}
+
+.indice{
+    width: 200px;
+}
+.grid1{
+    display: grid;
+    grid-template-areas: 
+    ". . titulo"
+    ". . imagen"
+    ". . noticia";
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 10px 10px 975px;
+    justify-content: end;
+}
+
+.grid2{
+    display: grid;
+    grid-template-areas:
+    "titulo . ." 
+    "imagen . ."
+    "noticia . .";
+    grid-template-columns: 975px 10px 10px;
+    grid-template-rows: 200px 200px 200px;
+}
+
+section{
+    grid-area: imagen;
+    justify-self: center;
+    align-self: center;
+}
+
+article{
+    grid-area: noticia;
+    justify-self: center;
+    align-self: center;
+}
+
+h2{
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+}
+
+.fixture{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fixture__equipo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    align-items: center;
+}
+
+.fixture__fechahora{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    align-items: center;
+}
+
+.fixture__equipo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 250px;
+    align-items: center;
+}
+
+header section{
+    display: inline-block;
+    background-color: white;
+    height: 80px;
+    position: relative;
+    border: solid 6px black;
+}
+
+
+header{
+    position: sticky;
+    z-index: 2;
+    top: 1px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px
+}
+
+
+
+@media screen and (max-width: 768px) {
+    iframe{
+        width: 100px;
+        height: 100px;
+    }   
+    .videoIzquierda{
+        left: 200px;
+    }
+    .indice{
+        width: 100px;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Contacto/info</title>
+  </head>
+  <body class="ImagenFondo">
+    <header>
+      <section>
+        <p>logo y nombre de la pagina</p>
+      </section>
+      <nav class="FondoIndice">
+        <br />
+        <ul>
+          <li class="indice"><a href="index.html">Inicio</a></li>
+          <li class="indice"><a href="Noticias.html">Noticias</a></li>
+          <li class="indice"><a href="Fixture.html"> Fixture</a></li>
+          <li class="indice"><a href="Campeonatos.html">Campeonatos</a></li>
+          <li class="indice"><a href="Contacto-Info.html">Contacto/Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Fondo">
+      <h1>Contacto/Info</h1>
+      <div class="info">
+        <p>informacion/formas de Contacto</p>
+        <section>imagen</section>
+      </div>
+      <form>
+        <fieldset>
+          <legend>Deja aca tu opinion! Nos ayuda mucho</legend>
+          <label for="Nombre">Nombre y Apellido</label>
+          <br />
+          <input type="text" name="Nombre" id="Nombre" />
+          <br />
+          <label for="Mail">Mail</label>
+          <br />
+          <input type="email" name="Mail" id="Mail" />
+          <br />
+          <label for="Opinion"
+            >Como definirias tu experiencia en la pagina?</label
+          >
+          <br />
+          <select name="Opinion" id="Opinion">
+            <option value="Muy Buena">Muy Buena</option>
+            <option value="Buena">Buena</option>
+            <option value="Regular">Regular</option>
+            <option value="Mala">Mala</option>
+            <option value="Muy mala">Muy mala</option>
+          </select>
+          <br />
+          <label for="Actualizaciones">Recibir Actualizaciones</label>
+          <input type="checkbox" name="Si" id="Actualizaciones" />
+          <br />
+          <label for="Comentarios">Comentarios</label>
+          <br />
+          <textarea
+            name="Comentarios"
+            id="Comentarios"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <input type="reset" value="Reiniciar el formulario" />
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <p>pie de pagina</p>
+    </footer>
+  </body>
+</html>
