@@ -1,193 +1,249 @@
+@font-face {
+  font-family: "indie flower";
+  src: url(IndieFlower-Regular.ttf); }
 
-.FondoIndice
-    {   
-        display: inline-block;
-        background-color: rgb(22, 153, 22);
-        font-size: 16px;
-        height: 75px;
-        width: 1000px;
-        border: solid 8px rgb(9, 83, 9)
-    }
-.Fondo
-    {
-        background-color: rgb(24, 204, 24);
-    }
+.FondoIndice {
+  display: inline-block;
+  background-color: #169916;
+  font-size: 16px;
+  height: 75px;
+  width: 1000px;
+  border: solid 8px #095309; }
 
+.Fondo {
+  background-color: #236607;
+  background: linear-gradient(86deg, #236607 32%, #c4d0bf 100%);
+  border: solid 5px green; }
 
-.ImagenFondo
-    {
-            background-image: url(imagenes/lionel-messi-argentina-nigeria-world-cup-russi-2018-26062018_93x42eje651jz426mmy39451.jpg)
-    }
+.fondofixture {
+  width: fixture;
+  width: 1100px;
+  background-color: #236607;
+  background: linear-gradient(86deg, #236607 32%, #c4d0bf 100%);
+  border: solid 5px green;
+  margin: 0% auto; }
 
+.fondocampeonato {
+  height: campeonato;
+  max-height: 1600px;
+  background-color: #236607;
+  background: linear-gradient(86deg, #236607 32%, #c4d0bf 100%);
+  border: solid 5px green; }
 
-h1, h2{
-    text-decoration: underline white;
-    text-align: center;
-    color: white
-}
+.textoinicial {
+  font-family: "indie flower";
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left; }
 
-p, input, textarea{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
+.ImagenFondo {
+  background-image: url(imagenes/lionel-messi-argentina-nigeria-world-cup-russi-2018-26062018_93x42eje651jz426mmy39451.jpg); }
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+h1, h2 {
+  text-decoration: underline white;
+  text-align: center;
+  color: white;
+  font-family: "indie flower"; }
 
-}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly; }
 
-li a{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-}
+li a {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  transition: 1s; }
 
-.videoIzquierda{
-    position: relative;
-    left: 700px;
-    animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.videoIzquierda {
+  position: relative;
+  left: 700px;
+  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-}
+.videoDerecha {
+  position: relative;
+  left: 70px;
+  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-.videoDerecha{
-    position: relative;
-    left: 70px;
-    animation: slide-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background: linear-gradient(to bottom, #56ab2f, #a8e063);
+  height: 50px;
+  margin: 8px;
+  border: solid 5px green; }
 
-footer{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    background-color: rgb(9, 83, 9);
-    height: 50px;
-    margin: 8px;
-}
+.indice {
+  width: 200px; }
 
-.indice{
-    width: 200px;
-}
-.grid1{
-    display: grid;
-    grid-template-areas: 
-    ". . titulo"
-    ". . imagen"
-    ". . noticia";
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 10px 10px 975px;
-    justify-content: end;
-}
+.grid1 {
+  display: grid;
+  grid-template-areas: ". . titulo" ". . imagen" ". . noticia";
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 10px 10px 975px;
+  justify-content: end; }
 
-.grid2{
-    display: grid;
-    grid-template-areas:
-    "titulo . ." 
-    "imagen . ."
-    "noticia . .";
-    grid-template-columns: 975px 10px 10px;
-    grid-template-rows: 200px 200px 200px;
-}
+.grid2 {
+  display: grid;
+  grid-template-areas: "titulo . ."  "imagen . ." "noticia . .";
+  grid-template-columns: 975px 10px 10px;
+  grid-template-rows: 200px 200px 200px; }
 
-section{
-    grid-area: imagen;
-    justify-self: center;
-    align-self: center;
-}
+.gridcampeonato1, .posicion--campeonato, .posicion--campeonato3 {
+  display: grid;
+  grid-template-areas: ". titulo datos participantes campeones imagen";
+  grid-template-columns: 300px 200px 200px 200px 200px 200px;
+  grid-template-rows: 100px 100px 100px 100px 100px; }
+  .gridcampeonato1 p, .posicion--campeonato p, .posicion--campeonato3 p, .gridcampeonato1 ul, .posicion--campeonato ul, .posicion--campeonato3 ul, .gridcampeonato1 ol, .posicion--campeonato ol, .posicion--campeonato3 ol {
+    font-family: "indie flower";
+    font-weight: bold; }
+    .gridcampeonato1 p p, .posicion--campeonato p p, .posicion--campeonato3 p p, .gridcampeonato1 ul p, .posicion--campeonato ul p, .posicion--campeonato3 ul p, .gridcampeonato1 ol p, .posicion--campeonato ol p, .posicion--campeonato3 ol p {
+      color: white;
+      text-decoration-line: underline; }
 
-article{
-    grid-area: noticia;
-    justify-self: center;
-    align-self: center;
-}
+.gridcampeonato2, .posicion--campeonato2 {
+  display: grid;
+  grid-template-areas: "imagen titulo datos participantes campeones .";
+  grid-template-columns: 200px 200px 200px 200px 200px 30px;
+  grid-template-rows: 100px 100px 100px 100px 100px; }
+  .gridcampeonato2 p, .posicion--campeonato2 p, .gridcampeonato2 ol, .posicion--campeonato2 ol, .gridcampeonato2 ul, .posicion--campeonato2 ul {
+    font-family: "indie flower";
+    font-weight: bold; }
+    .gridcampeonato2 p p, .posicion--campeonato2 p p, .gridcampeonato2 ol p, .posicion--campeonato2 ol p, .gridcampeonato2 ul p, .posicion--campeonato2 ul p {
+      color: white;
+      text-decoration-line: underline; }
 
-h2{
-    grid-area: titulo;
-    justify-self: center;
-    align-self: center;
-}
+ol {
+  grid-area: campeones;
+  justify-self: center;
+  align-self: center; }
 
-.fixture{
-    display: flex;
-    justify-content: space-around;
-}
+ul {
+  grid-area: datos;
+  justify-self: center;
+  align-self: center; }
 
-.fixture__equipo1{
+img {
+  grid-area: imagen;
+  justify-self: center;
+  align-self: center;
+  height: 200px;
+  width: 200px;
+  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+article {
+  grid-area: noticia;
+  justify-self: center;
+  align-self: center; }
+
+h2 {
+  grid-area: titulo;
+  justify-self: center;
+  align-self: center; }
+
+p {
+  grid-area: participantes;
+  justify-self: center;
+  align-self: center;
+  text-align: center; }
+
+.posicion--campeonato {
+  position: relative;
+  top: 200px; }
+
+.posicion--campeonato2 {
+  position: relative;
+  bottom: 300px;
+  grid-template-rows: 100px 100px 90px; }
+
+.posicion--campeonato3 {
+  position: relative;
+  bottom: 200px; }
+
+.fixture {
+  display: flex;
+  justify-content: space-around; }
+  .fixture .fixture__equipo1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 250px;
-    align-items: center;
-}
-
-.fixture__fechahora{
+    align-items: center; }
+  .fixture .fixture__fechahora {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 250px;
-    align-items: center;
-}
-
-.fixture__equipo2{
+    align-items: center; }
+  .fixture .fixture__equipo2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 250px;
-    align-items: center;
-}
+    align-items: center; }
 
-header section{
-    display: inline-block;
+header {
+  position: sticky;
+  z-index: 2;
+  top: 1px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; }
+  header section {
+    display: flex;
+    align-self: center;
     background-color: white;
-    height: 80px;
+    height: 75px;
     position: relative;
-    border: solid 6px black;
-}
+    border: solid 6px black; }
+    header section p {
+      text-decoration: underline 3px black;
+      color: green;
+      font-size: 30px;
+      position: relative;
+      top: 5px; }
+    header section img {
+      height: 50px;
+      width: 60px;
+      position: relative;
+      top: 5px;
+      animation: none; }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px; }
+  .info p {
+    font-family: "indie flower";
+    color: white; }
 
-header{
-    position: sticky;
-    z-index: 2;
-    top: 1px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap
-}
+li a:hover {
+  border: solid 3px white; }
 
-.info{
-    display: flex;
-    justify-content: space-between;
-    border: solid 2px
-}
-
-
+header section:hover {
+  border: solid 6px #070786; }
 
 @media screen and (max-width: 768px) {
-    iframe{
-        width: 100px;
-        height: 100px;
-    }   
-    .videoIzquierda{
-        left: 200px;
-    }
-    .indice{
-        width: 100px;
-    }
-}
+  iframe {
+    width: 100px;
+    height: 100px; }
+  .videoIzquierda {
+    left: 200px; }
+  .indice {
+    width: 100px; } }
 
 @keyframes slide-in-bottom {
-    0% {
-      transform: translateY(1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
+  0% {
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }

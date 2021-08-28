@@ -5,15 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <title>Contacto/info</title>
   </head>
   <body class="ImagenFondo">
     <header>
       <section>
-        <p>logo y nombre de la pagina</p>
+        <a href="index.html">
+          <img
+            src="C:\Documents\proyecto\repositorio_proyecto\imagenes\c1b76665506398da70b47f306e5e4afc.png"
+            alt="logo"
+          />
+        </a>
+        <a href="index.html"><p>FND</p></a>
       </section>
       <nav class="FondoIndice">
-        <br />
         <ul>
           <li class="indice"><a href="index.html">Inicio</a></li>
           <li class="indice"><a href="Noticias.html">Noticias</a></li>
@@ -27,47 +48,75 @@
       <h1>Contacto/Info</h1>
       <div class="info">
         <p>informacion/formas de Contacto</p>
-        <section>imagen</section>
+        <img src="" alt="">
       </div>
-      <form>
-        <fieldset>
-          <legend>Deja aca tu opinion! Nos ayuda mucho</legend>
-          <label for="Nombre">Nombre y Apellido</label>
-          <br />
-          <input type="text" name="Nombre" id="Nombre" />
-          <br />
-          <label for="Mail">Mail</label>
-          <br />
-          <input type="email" name="Mail" id="Mail" />
-          <br />
-          <label for="Opinion"
-            >Como definirias tu experiencia en la pagina?</label
-          >
-          <br />
-          <select name="Opinion" id="Opinion">
-            <option value="Muy Buena">Muy Buena</option>
-            <option value="Buena">Buena</option>
-            <option value="Regular">Regular</option>
-            <option value="Mala">Mala</option>
-            <option value="Muy mala">Muy mala</option>
-          </select>
-          <br />
-          <label for="Actualizaciones">Recibir Actualizaciones</label>
-          <input type="checkbox" name="Si" id="Actualizaciones" />
-          <br />
-          <label for="Comentarios">Comentarios</label>
-          <br />
-          <textarea
-            name="Comentarios"
-            id="Comentarios"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <br />
-          <input type="reset" value="Reiniciar el formulario" />
-          <input type="submit" value="Enviar" />
-        </fieldset>
-      </form>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Abrir formulario
+      </button>
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Formulario</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <fieldset>
+                  <legend>Deja aca tu opinion! Nos ayuda mucho</legend>
+                  <label for="Nombre">Nombre y Apellido</label>
+                  <br />
+                  <input type="text" name="Nombre" id="Nombre" />
+                  <br />
+                  <label for="Mail">Mail</label>
+                  <br />
+                  <input type="email" name="Mail" id="Mail" />
+                  <br />
+                  <label for="Opinion"
+                    >Como definirias tu experiencia en la pagina?</label
+                  >
+                  <br />
+                  <select name="Opinion" id="Opinion">
+                    <option value="Muy Buena">Muy Buena</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                    <option value="Muy mala">Muy mala</option>
+                  </select>
+                  <br />
+                  <label for="Actualizaciones">Recibir Actualizaciones</label>
+                  <input type="checkbox" name="Si" id="Actualizaciones" />
+                  <br />
+                  <label for="Comentarios">Comentarios</label>
+                  <br />
+                  <textarea
+                    name="Comentarios"
+                    id="Comentarios"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <br />
+                  <input type="reset" value="Reiniciar el formulario" />
+                  <input type="submit" value="Enviar" />
+                </fieldset>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <p>pie de pagina</p>
