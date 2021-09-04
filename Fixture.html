@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <title>Fixture</title>
   </head>
   <body class="ImagenFondo">
     <header>
       <section>
-        <a href="index.html"> <img src="imagenes\c1b76665506398da70b47f306e5e4afc.png" alt="logo"> </a>
+        <a href="index.html">
+          <img src="imagenes\c1b76665506398da70b47f306e5e4afc.png" alt="logo" />
+        </a>
         <a href="index.html"><p>FND</p></a>
       </section>
       <nav class="FondoIndice">
@@ -24,25 +42,186 @@
         </ul>
       </nav>
     </header>
-    <div class="fondofixture">
-      <h1>Fixture</h1>
-      <div class="fixture">
-        <div class="fixture__equipo1">
-          <h2>Equipo 1</h2>
-          <img src="" alt="">
+    <div class="fondofixture" id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            Fecha 10
+          </a>
         </div>
-        <div class="fixture__fechahora">
-          <h2>Fecha y Hora</h2>
-          <p>15:45</p>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Fixture</h1>
+            <div class="fixture">
+              <div class="fixture__equipo1">
+                "
+                <h2>Equipo 1</h2>
+                <img src="imagenes\180px-Escudo_platense.png" alt="platense" />
+                <img
+                  src="imagenes\Escudo_Rosario_Central.png"
+                  alt="rosariocentral"
+                />
+                <img
+                  src="imagenes\954-9543349_escudo-del-racing-club-de-avellaneda-logo-racing.png"
+                  alt="racing"
+                />
+                <img src="imagenes\River Plate256x.png" alt="river" />
+                <img
+                  src="imagenes\club-estudiantes-de-la-plata-buenos-aires-2019-logo-4F3F490DE7-seeklogo.com.png"
+                  alt="estudiantes"
+                />
+              </div>
+              <div class="fixture__fechahora">
+                <h2>Fecha y Hora</h2>
+                <p>4/9 18:00</p>
+                <p>4/9 20:15</p>
+                <p>5/9 19:00</p>
+                <p>5/9 21:15</p>
+                <p>6/9 18:00</p>
+              </div>
+              <div class="fixture__equipo2">
+                <h2>Equipo 2</h2>
+                <img
+                  src="imagenes\san-lorenzo-logo-escudo-6.png"
+                  alt="sanlorenzo"
+                />
+                <img src="imagenes\Boca_escudo.png" alt="boca" />
+                <img src="imagenes\Banfield.png" alt="banfield" />
+                <img
+                  src="imagenes\clube-independiente-logo-escudo-2.png"
+                  alt="independiente"
+                />
+                <img src="imagenes\Argentinos Juniors.png" alt="argentinos" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="fixture__equipo2">
-          <h2>Equipo 2</h2>
-          <img src="" alt="">
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+            Fecha 11
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Fixture</h1>
+            <div class="fixture">
+              <div class="fixture__equipo1">
+                "
+                <h2>Equipo 1</h2>
+                <img
+                  src="imagenes\clube-independiente-logo-escudo-2.png"
+                  alt="independiente"
+                />
+                <img
+                  src="imagenes\san-lorenzo-logo-escudo-6.png"
+                  alt="sanlorenzo"
+                />
+                <img src="imagenes\Boca_escudo.png" alt="boca" />
+                <img
+                  src="imagenes\Union_de_Santa_Fe.png"
+                  alt="union"
+                />
+                <img
+                  src="imagenes\Newell's_Old_Boys_Escudo.png"
+                  alt="newells"
+                />
+              </div>
+              <div class="fixture__fechahora">
+                <h2>Fecha y Hora</h2>
+                <p>13/9 16:30</p>
+                <p>13/9 18:00</p>
+                <p>14/9 21:00</p>
+                <p>15/9 14:15</p>
+                <p>15/9 21:00</p>
+              </div>
+              <div class="fixture__equipo2">
+                <h2>Equipo 2</h2>
+                <img src="imagenes\4312.png" alt="lanus" />
+                <img
+                  src="imagenes\954-9543349_escudo-del-racing-club-de-avellaneda-logo-racing.png"
+                  alt="racing"
+                />
+                <img
+                  src="imagenes\480px-Escudo_Defensa_y_Justicia.png"
+                  alt="defensa"
+                />
+                <img
+                  src="imagenes\club-estudiantes-de-la-plata-buenos-aires-2019-logo-4F3F490DE7-seeklogo.com.png"
+                  alt="estudiantes"
+                />
+                <img src="imagenes\River Plate256x.png" alt="river" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseThree">
+            Fecha 12
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            <h1>Fixture</h1>
+            <div class="fixture">
+              <div class="fixture__equipo1">
+                "
+                <h2>Equipo 1</h2>
+                <img
+                  src="imagenes\954-9543349_escudo-del-racing-club-de-avellaneda-logo-racing.png"
+                  alt="racing"
+                />
+                <img
+                  src="imagenes\Club Atletico Tucuman.png"
+                  alt="atleticotucuman"
+                />
+                <img src="imagenes\4215.png" alt="huracan" />
+                <img src="imagenes\River Plate256x.png" alt="river" />
+                <img
+                  src="imagenes\Escudo_Rosario_Central.png"
+                  alt="rosariocentral"
+                />
+              </div>
+              <div class="fixture__fechahora">
+                <h2>Fecha y Hora</h2>
+                <p>18/9 18:00</p>
+                <p>18/9 20:15</p>
+                <p>19/9 18:00</p>
+                <p>19/9 20:15</p>
+                <p>20/9 18:00</p>
+              </div>
+              <div class="fixture__equipo2">
+                <h2>Equipo 2</h2>
+                <img
+                  src="imagenes\Escudo_Talleres_2015.svg.png"
+                  alt="talleres"
+                />
+                <img src="imagenes\Boca_escudo.png" alt="boca" />
+                <img
+                  src="imagenes\clube-independiente-logo-escudo-2.png"
+                  alt="independiente"
+                />
+                <img src="imagenes\arse1.png" alt="arsenal" />
+                <img
+                  src="imagenes\san-lorenzo-logo-escudo-6.png"
+                  alt="sanlorenzo"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <footer>
-      <p>pie de pagina</p>
+      <p>
+        todos los derechos reservados de esta pagina pertenecen a Lieb Tomas
+      </p>
+      <a href="https://www.gmail.com/"><img src="imagenes\gmail_logo_PNG12.png" alt="gmail"></a>
+      <a href="https://www.instagram.com/?hl=es"><img src="imagenes\87390.png" alt="ig" /></a>
+      <a href="https://web.whatsapp.com/"><img src="imagenes/logotipo-de-whatsapp.png" alt="whatsapp" /></a>
     </footer>
   </body>
 </html>

@@ -65,21 +65,34 @@ li a {
 .videoIzquierda {
   position: relative;
   left: 700px;
-  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: slideInUp;
+  animation-duration: 2s; }
 
 .videoDerecha {
   position: relative;
   left: 70px;
-  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: slideInUp;
+  animation-duration: 3s; }
 
 footer {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  column-gap: 30px;
   background: linear-gradient(to bottom, #56ab2f, #a8e063);
   height: 50px;
   margin: 8px;
   border: solid 5px green; }
+  footer p {
+    align-self: flex-end;
+    font-family: "indie flower";
+    color: white;
+    font-size: 10px; }
+  footer img {
+    position: relative;
+    top: 4px;
+    height: 30px;
+    width: 40px; }
 
 .indice {
   width: 200px; }
@@ -87,15 +100,42 @@ footer {
 .grid1 {
   display: grid;
   grid-template-areas: ". . titulo" ". . imagen" ". . noticia";
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 200px 400px 200px;
   grid-template-columns: 10px 10px 975px;
-  justify-content: end; }
+  justify-content: end;
+  font-family: "indie flower";
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left; }
+  .grid1 h2 {
+    font-size: 50px;
+    color: #0b3a1a; }
+  .grid1 img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+    height: 300px; }
 
 .grid2 {
   display: grid;
   grid-template-areas: "titulo . ."  "imagen . ." "noticia . .";
   grid-template-columns: 975px 10px 10px;
-  grid-template-rows: 200px 200px 200px; }
+  grid-template-rows: 200px 300px 200px;
+  justify-content: space-around;
+  font-family: "indie flower";
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left; }
+  .grid2 h2 {
+    font-size: 50px;
+    color: #0b3a1a; }
+  .grid2 img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    height: 300px; }
 
 .gridcampeonato1, .posicion--campeonato, .posicion--campeonato3 {
   display: grid;
@@ -137,7 +177,8 @@ img {
   align-self: center;
   height: 200px;
   width: 200px;
-  animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: slideInUp;
+  animation-duration: 2s; }
 
 article {
   grid-area: noticia;
@@ -175,20 +216,28 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 250px;
+    max-height: 2500px;
     align-items: center; }
+    .fixture .fixture__equipo1 img {
+      height: 160px; }
   .fixture .fixture__fechahora {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 250px;
+    max-height: 2500px;
     align-items: center; }
+    .fixture .fixture__fechahora p {
+      font-family: "indie flower";
+      color: white;
+      font-size: 50px; }
   .fixture .fixture__equipo2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 250px;
+    max-height: 2500px;
     align-items: center; }
+    .fixture .fixture__equipo2 img {
+      height: 140px; }
 
 header {
   position: sticky;
@@ -219,11 +268,26 @@ header {
 
 .info {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   border: solid 2px; }
   .info p {
     font-family: "indie flower";
-    color: white; }
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left; }
+  .info img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 300px;
+    width: 400px;
+    z-index: 1; }
+  .info section img {
+    align-items: center;
+    width: 150px;
+    height: 150px; }
 
 li a:hover {
   border: solid 3px white; }
@@ -236,9 +300,16 @@ header section:hover {
     width: 100px;
     height: 100px; }
   .videoIzquierda {
-    left: 200px; }
+    left: 190px; }
+  .FondoIndice {
+    width: 350px;
+    height: 180px; }
   .indice {
-    width: 100px; } }
+    width: 30px; }
+  li a {
+    padding: 3px; }
+  .indiceresponsive {
+    display: block; } }
 
 @keyframes slide-in-bottom {
   0% {

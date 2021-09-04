@@ -23,6 +23,7 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap-material-design": "^4.1.3"
   }
 }
