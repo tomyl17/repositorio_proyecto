@@ -292,10 +292,10 @@ header {
 li a:hover {
   border: solid 3px white; }
 
-header section:hover {
+header section:hover, .info section img:hover {
   border: solid 6px #070786; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   iframe {
     width: 100px;
     height: 100px; }
@@ -309,7 +309,12 @@ header section:hover {
   li a {
     padding: 3px; }
   .indiceresponsive {
-    display: block; } }
+    display: block; }
+  footer {
+    height: 83px; }
+    footer img {
+      position: relative;
+      top: 23px; } }
 
 @keyframes slide-in-bottom {
   0% {

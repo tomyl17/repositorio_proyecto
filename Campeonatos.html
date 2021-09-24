@@ -4,18 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bienvenido FND(Futbol Noticias y Datos), la pagina en donde encontraras
+    toda la informacion, las ultimas novedades del mundo del futbol y
+    mas!">
+    <meta name="keywords" content="FUTBOL, ARGENTINA, FUTBOL ARGENTINO, NOTICIAS, CAMPEONATO ARGENTINO, TORNEO ARGENTINO">
     <link rel="stylesheet" href="estilos.css" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <title>Campeonatos</title>
   </head>
   <body class="ImagenFondo">
     <header>
       <section>
-        <a href="index.html"> <img src="imagenes\c1b76665506398da70b47f306e5e4afc.png" alt="logo"> </a>
+        <a href="index.html">
+          <img src="imagenes\c1b76665506398da70b47f306e5e4afc.png" alt="logo" />
+        </a>
         <a href="index.html"><p>FND</p></a>
       </section>
       <nav class="FondoIndice">
-        <ul>
+        <ul class="indiceresponsive">
           <li class="indice"><a href="index.html">Inicio</a></li>
           <li class="indice"><a href="Noticias.html">Noticias</a></li>
           <li class="indice"><a href="Fixture.html"> Fixture</a></li>
@@ -26,7 +48,8 @@
     </header>
     <div class="fondocampeonato">
       <h1 id="titulo">Campeonatos</h1>
-      <table align="center" border="20" cellpadding="30" id="tabla" >
+      <div style="overflow-x: auto;">
+      <table align="center" border="20" cellpadding="30" id="tabla">
         <tr>
           <th>Nombre del Campeonato</th>
           <th>Informacion</th>
@@ -34,92 +57,118 @@
           <th>Ultimos campeones</th>
         </tr>
       </table>
-        <div class="gridcampeonato1 posicion--campeonato">
-          <h2>Primera Division Argentina</h2>
-          <ul>
-            <li>es organizado desde 1893</li>
-            <li>
-              Es el máximo escalón del sistema de competiciones del fútbol
-              masculino en el país.
-            </li>
-            <li>
-              es considerado como uno de los mejores campeonatos del mundo
-            </li>
-            <li>
-              River Plate es el equipo con mas campeonatos ganados con 35
-            </li>
-          </ul>
-          <p>los clubes de futbol argentinos de primera division</p>
-          <ol>
-            <li>Boca Juniors</li>
-            <li>Racing Club</li>
-            <li>Boca Juniors</li>
-            <li>Boca Juniors</li>
-            <li>Lanus</li>
-          </ol>
-          <img src="imagenes\15640995874183.jpg" alt="copatorneo" class="img-thumbnail">
-        </div>
-        <div class="gridcampeonato2">
-          <img src="imagenes\IMG-20190118-WA0006.jpg" alt="copaargentina" class="img-thumbnail">
-          <h2>Copa Argentina</h2>
-          <ul>
-              <li>es un torneo de eliminacion directa</li>
-              <li>se juega desde el año 1969</li>
-              <li>
-                los maximos ganadores del torneo son River Plate y Boca Juniors
-              </li>
-          </ul>
-          <p>participan 64 equipos de distintas divisiones del futbol argentino</p>
-          <ol>
-            <li>River Plate</li>
-            <li>Rosario Central</li>
-            <li>River Plate</li>
-            <li>River Plate</li>
-            <li>Boca Juniors</li>
-          </ol>
-        </div>
-        <div class="gridcampeonato1 posicion--campeonato3">
-          <h2>Eliminatorias Qatar 2022</h2>
-          <ul>
-            <li>
-            otorga 4 cupos directos y uno al repechaje para el mundial qatar    2022
+    </div>
+      <div class="gridcampeonato1 posicion--campeonato">
+        <h2>Primera Division Argentina</h2>
+        <ul>
+          <li>es organizado desde 1893</li>
+          <li>
+            Es el máximo escalón del sistema de competiciones del fútbol
+            masculino en el país.
+          </li>
+          <li>es considerado como uno de los mejores campeonatos del mundo</li>
+          <li>River Plate es el equipo con mas campeonatos ganados con 35</li>
+        </ul>
+        <p>los clubes de futbol argentinos de primera division</p>
+        <ol>
+          <li>Boca Juniors</li>
+          <li>Racing Club</li>
+          <li>Boca Juniors</li>
+          <li>Boca Juniors</li>
+          <li>Lanus</li>
+        </ol>
+        <img
+          src="imagenes\15640995874183.jpg"
+          alt="copatorneo"
+          class="img-thumbnail"
+        />
+      </div>
+      <div class="gridcampeonato2">
+        <img
+          src="imagenes\IMG-20190118-WA0006.jpg"
+          alt="copaargentina"
+          class="img-thumbnail"
+        />
+        <h2>Copa Argentina</h2>
+        <ul>
+          <li>es un torneo de eliminacion directa</li>
+          <li>se juega desde el año 1969</li>
+          <li>
+            los maximos ganadores del torneo son River Plate y Boca Juniors
+          </li>
+        </ul>
+        <p>
+          participan 64 equipos de distintas divisiones del futbol argentino
+        </p>
+        <ol>
+          <li>River Plate</li>
+          <li>Rosario Central</li>
+          <li>River Plate</li>
+          <li>River Plate</li>
+          <li>Boca Juniors</li>
+        </ol>
+      </div>
+      <div class="gridcampeonato1 posicion--campeonato3">
+        <h2>Eliminatorias Qatar 2022</h2>
+        <ul>
+          <li>
+            otorga 4 cupos directos y uno al repechaje para el mundial qatar
+            2022
           </li>
           <li>son partidos de ida y vuelta</li>
-          </ul>
-          <p>las 10 selecciones pertenecientes a la conmebol</p>
-          <ol>
+        </ul>
+        <p>las 10 selecciones pertenecientes a la conmebol</p>
+        <ol>
           <p>no hay equipos campeones, solo equipos clasificados</p>
-          </ol>
-          <img src="imagenes\190903171331-qatar-world-cup-emblem-exlarge-169.jpg" alt="Eliminatorias" class="img-thumbnail">
-        </div>
-        <div class="gridcampeonato2 posicion--campeonato2" >
-          <img src="imagenes\16259692105687.jpg" alt="copaamerica" class="img-thumbnail">
-          <h2>Copa America</h2>
-          <ul>
-            <li>es el principal torneo internacional en sudamerica</li>
-            <li>se juega desde 1916</li>
-            <li>
-              es el torneo de selecciones mayores que mas veces se realizo, ademas de ser el megaevento deportivo mas veces realizado en el mundo
-            </li>
-            <li>la seleccion con mas campeonatos es uruguay con 10</li>
-          </ul>
-          <p>las 10 selecciones pertenecientes a la conmebol, con algunos invitados en algunas ediciones</p>
-          <ol>
-            <li>Brasil</li>
-            <li>Chile</li>
-            <li>Chile</li>
-            <li>Uruguay</li>
-            <li>Brasil</li>
-          </ol>
-        </div>
+        </ol>
+        <img
+          src="imagenes\190903171331-qatar-world-cup-emblem-exlarge-169.jpg"
+          alt="Eliminatorias"
+          class="img-thumbnail"
+        />
+      </div>
+      <div class="gridcampeonato2 posicion--campeonato2">
+        <img
+          src="imagenes\16259692105687.jpg"
+          alt="copaamerica"
+          class="img-thumbnail"
+        />
+        <h2>Copa America</h2>
+        <ul>
+          <li>es el principal torneo internacional en sudamerica</li>
+          <li>se juega desde 1916</li>
+          <li>
+            es el torneo de selecciones mayores que mas veces se realizo, ademas
+            de ser el megaevento deportivo mas veces realizado en el mundo
+          </li>
+          <li>la seleccion con mas campeonatos es uruguay con 10</li>
+        </ul>
+        <p>
+          las 10 selecciones pertenecientes a la conmebol, con algunos invitados
+          en algunas ediciones
+        </p>
+        <ol>
+          <li>Brasil</li>
+          <li>Chile</li>
+          <li>Chile</li>
+          <li>Uruguay</li>
+          <li>Brasil</li>
+        </ol>
+      </div>
     </div>
     <footer>
       <p>
         todos los derechos reservados de esta pagina pertenecen a Lieb Tomas
       </p>
-      <a href="https://www.gmail.com/"><img src="imagenes\gmail_logo_PNG12.png" alt="gmail"></a>
-      <a href="https://www.instagram.com/?hl=es"><img src="imagenes\87390.png" alt="ig" /></a>
-      <a href="https://web.whatsapp.com/"><img src="imagenes/logotipo-de-whatsapp.png" alt="whatsapp" /></a>
+      <a href="https://www.gmail.com/"
+        ><img src="imagenes\gmail_logo_PNG12.png" alt="gmail"
+      /></a>
+      <a href="https://www.instagram.com/?hl=es"
+        ><img src="imagenes\87390.png" alt="ig"
+      /></a>
+      <a href="https://web.whatsapp.com/"
+        ><img src="imagenes/logotipo-de-whatsapp.png" alt="whatsapp"
+      /></a>
     </footer>
   </body>
 </html>
